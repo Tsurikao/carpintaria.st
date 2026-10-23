@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="only light">
+<title>Carpintaria Sousa Tavares — Made-to-measure carpentry</title>
+<meta name="description" content="Carpintaria Sousa Tavares, Lda. — cozinhas, roupeiros, revestimentos, portas, escadas, tetos, pavimentos e estruturas de telhado por medida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="nojs" data-nojs>
+    <h1>Carpintaria Sousa Tavares</h1>
+    <p>Made-to-measure kitchens, wardrobes, wall cladding, doors and windows, staircases, ceilings, floors and terraces, and roof structures. Designed with you, made in our workshop, fitted by our own team.</p>
+    <p>Tel. <a href="tel:+351256065387">+351 256 065 387</a><br>E-mail <a href="mailto:carpintaria.st@gmail.com">carpintaria.st@gmail.com</a></p>
+</div>
+
+<div class="cur-ring" data-cur-ring aria-hidden="true"><span class="cur-label" data-cur-label></span></div>
+<div class="cur-dot" data-cur-dot aria-hidden="true"></div>
+
+<header class="site-header">
+  <a class="brand" href="#top" data-go="top" aria-label="Carpintaria Sousa Tavares, Lda.">
+    <img src="assets/images/brand/logo-sousa-tavares.webp" alt="Carpintaria Sousa Tavares, Lda." width="132" height="40">
+  </a>
+  <div class="header-actions">
+    <div class="lang" role="group" data-t-attr="aria-label:ui.lang">
+      <button type="button" lang="pt" data-set-lang="pt" aria-pressed="true">PT</button>
+      <span class="lang-sep" aria-hidden="true"></span>
+      <button type="button" lang="en" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button type="button" class="menu-btn" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+      <span class="menu-btn-label" data-t="ui.menu"></span>
+      <span class="menu-btn-icon"><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <nav class="menu-nav" aria-label="Main" data-nav-menu></nav>
+  <div class="menu-side">
+    <button type="button" class="btn-outline-light" data-menu-toggle aria-label="Close menu" data-t="ui.close"></button>
+    <div class="lang menu-lang" role="group" data-t-attr="aria-label:ui.lang">
+      <button type="button" lang="pt" data-set-lang="pt" aria-pressed="true">PT</button>
+      <span class="lang-sep" aria-hidden="true"></span>
+      <button type="button" lang="en" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="menu-contacts">
+      <a data-contact="phone"></a>
+      <a data-contact="email"></a>
+      <a data-contact="whatsapp" target="_blank" rel="noopener noreferrer"></a>
+      <a data-contact="instagram" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+  </div>
+</div>
+
+<div class="modal jobs" id="careers" data-jobs role="dialog" aria-modal="true" data-t-attr="aria-label:ui.careers" data-lenis-prevent hidden>
+  <div class="jobs-card">
+    <div class="row-between">
+      <span class="eyebrow" data-t="ui.careers"></span>
+      <button type="button" class="btn-outline-light sm" data-jobs-close data-t="ui.close"></button>
+    </div>
+    <h2 data-t="ui.jobsH"></h2>
+    <p class="jobs-lead" data-t="ui.jobsP"></p>
+    <div class="jobs-status" role="status" data-jobs-sent hidden>
+      <span data-t="ui.thanks"></span>
+      <p data-t="ui.jobsThanksP"></p>
+    </div>
+    <form class="form-grid" data-jobs-form>
+      <label class="field"><span data-t="ui.name"></span>
+        <input class="input" name="name" required autocomplete="name" data-t-attr="placeholder:ui.phName">
+      </label>
+      <label class="field"><span data-t="ui.phone"></span>
+        <input class="input" name="phone" type="tel" required autocomplete="tel" placeholder="+351 9xx xxx xxx">
+      </label>
+      <label class="field full"><span data-t="ui.email"></span>
+        <input class="input" name="email" type="email" required autocomplete="email" data-t-attr="placeholder:ui.phEmail">
+      </label>
+      <label class="field full"><span data-t="ui.vacancy"></span>
+        <select class="input" name="vacancy" required data-vacancy-select>
+          <option value="" data-t="ui.select"></option>
+        </select>
+      </label>
+      <label class="field full"><span data-t="ui.msg"></span>
+        <input class="input" name="message" data-t-attr="placeholder:ui.jobsMsgPh">
+      </label>
+      <button type="submit" class="btn-submit"><span data-t="ui.jobsSend"></span> <span aria-hidden="true">→</span></button>
+    </form>
+  </div>
+</div>
+
+<div class="modal proj" data-proj role="dialog" aria-modal="true" data-lenis-prevent hidden>
+  <div class="proj-card">
+    <div class="proj-media">
+      <div data-proj-slides></div>
+      <button type="button" class="gal-close" data-proj-close aria-label="Close">×</button>
+      <button type="button" class="gal-btn gal-prev" data-gal="-1" data-t-attr="aria-label:ui.prevImg">←</button>
+      <button type="button" class="gal-btn gal-next" data-gal="1" data-t-attr="aria-label:ui.nextImg">→</button>
+      <div class="gal-bar">
+        <div class="gal-thumbs" data-proj-thumbs></div>
+        <span class="gal-count" data-proj-count></span>
+      </div>
+    </div>
+    <div class="proj-info">
+      <div class="row-between">
+        <span class="label-muted" data-proj-meta></span>
+        <button type="button" class="btn-outline-dark" data-proj-close data-t="ui.close"></button>
+      </div>
+      <h3 data-proj-title></h3>
+      <p class="proj-desc" data-proj-desc></p>
+      <div class="spec-grid">
+        <div class="stack-10">
+          <span class="label-muted" data-t="ui.mat"></span>
+          <ul class="list" data-proj-materials></ul>
+        </div>
+        <div class="stack-22">
+          <div class="stack-8">
+            <span class="label-muted" data-t="ui.dur"></span>
+            <span class="proj-time" data-proj-time></span>
+          </div>
+          <div class="stack-8">
+            <span class="label-muted" data-t="ui.incl"></span>
+            <ul class="list" data-proj-scope></ul>
+          </div>
+        </div>
+      </div>
+      <div class="proj-foot">
+        <a href="#quote" class="btn-dark" data-proj-quote><span data-t="ui.cta"></span> <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <section id="top" class="hero" data-hero>
+    <div class="fill" data-hero-scroll>
+      <div class="fill hero-move" data-hero-move>
+        <div class="fill" data-drift="1"><img class="cover" data-hero-img data-image="hero" fetchpriority="high" alt=""></div>
+      </div>
+    </div>
+    <div class="fill hero-shade" aria-hidden="true"></div>
+    <div class="hero-text" data-hero-text>
+      <h1>
+        <span class="line-mask"><span data-hero-line data-t="ui.h1a"></span></span>
+        <span class="line-mask"><span data-hero-line data-t="ui.h1b"></span></span>
+      </h1>
+      <p class="hero-sub" data-hero-fade data-t="ui.heroSub"></p>
+      <div class="hero-meta" data-hero-fade>
+        <span data-t="heroCaption"></span>
+        <a href="#quote" class="btn-light" data-go="quote"><span data-t="ui.cta"></span> <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2 data-reveal data-t="ui.introH"></h2>
+    <div class="intro-grid" data-reveal>
+      <p class="intro-motto"><span data-t="ui.l1"></span><br><span data-t="ui.l2"></span></p>
+      <p class="intro-body" data-t="ui.introP"></p>
+    </div>
+  </section>
+
+  <section id="wood" class="wood" aria-label="Everything in wood">
+    <div class="sec-head wood-head">
+      <h2 class="h-section" data-t="ui.woodH"></h2>
+      <span class="sub" data-t="ui.woodSub"></span>
+    </div>
+    <div data-panels></div>
+  </section>
+
+  <section id="work" class="work" data-work>
+    <div class="work-sticky" data-work-sticky>
+      <div class="sec-head work-head">
+        <h2 class="h-section" data-t="ui.workH"></h2>
+        <span class="sub" data-t="ui.workSub"></span>
+      </div>
+      <div class="work-track" data-work-track></div>
+      <div class="work-bar-wrap" data-work-bar-wrap aria-hidden="true"><span class="work-bar" data-work-bar></span></div>
+    </div>
+  </section>
+
+  <section id="process" class="process" data-process>
+    <div class="process-sticky">
+      <img class="cover" data-process-img data-image="processBg" loading="lazy" alt="">
+      <div class="fill process-shade" aria-hidden="true"></div>
+      <div class="process-grid">
+        <div class="stack-24">
+          <h2 data-t="ui.howH"></h2>
+          <div class="step-descs" data-step-descs></div>
+        </div>
+        <ol class="steps" data-steps>
+          <li class="steps-rail" aria-hidden="true"><span class="step-bar" data-step-bar></span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="eye" class="eye">
+    <div class="eye-wide" data-eye-wide>
+      <div class="eye-copy">
+        <h2 data-t="ui.eyeH"></h2>
+        <p data-t="ui.eyeP"></p>
+      </div>
+    </div>
+    <div class="eye-narrow" data-eye-narrow>
+      <h2 data-t="ui.eyeH"></h2>
+      <p data-t="ui.eyeP"></p>
+      <div class="eye-grid" data-eye-grid></div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="reviews-head" data-reveal>
+      <h2 class="h-section" data-t="ui.revH"></h2>
+      <span class="badge" data-t="ui.revBadge"></span>
+    </div>
+    <div class="reviews-grid" data-testimonials></div>
+  </section>
+
+  <section id="updates" class="updates" data-updates>
+    <h2 data-reveal data-t="ui.updH"></h2>
+    <div class="updates-list" data-updates-list></div>
+    <span class="note" data-t="ui.updNote"></span>
+    <div class="float" data-float aria-hidden="true"><img data-float-img alt=""></div>
+  </section>
+
+  <section id="quote" class="quote">
+    <img class="cover" data-image="quoteBg" loading="lazy" alt="">
+    <div class="fill quote-shade" aria-hidden="true"></div>
+    <div class="quote-grid">
+      <div class="quote-copy" data-reveal>
+        <span class="eyebrow" data-t="ui.cta"></span>
+        <h2 data-t="ui.quoteH"></h2>
+        <p data-t="ui.quoteP"></p>
+        <div class="quote-contacts">
+          <a data-contact="phone"></a>
+          <a data-contact="email"></a>
+          <a data-contact="whatsapp" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+      <div class="qpanel" data-reveal data-qpanel>
+        <span class="qframe" data-frame aria-hidden="true">
+          <span class="t" data-fl="x"></span><span class="r" data-fl="y"></span><span class="b" data-fl="x"></span><span class="l" data-fl="y"></span>
+        </span>
+        <span class="qpanel-title">Carpintaria Sousa Tavares</span>
+        <div class="quote-status" role="status" data-quote-sent hidden>
+          <span data-t="ui.thanks"></span>
+          <p data-t="ui.thanksP"></p>
+          <button type="button" class="btn-text" data-quote-reset data-t="ui.another"></button>
+        </div>
+        <form class="form-grid roomy" data-quote-form>
+          <label class="field"><span data-t="ui.name"></span>
+            <span class="field-wrap"><input class="input" name="name" required autocomplete="name" data-t-attr="placeholder:ui.phName"><span class="uline" data-uline aria-hidden="true"></span></span>
+          </label>
+          <label class="field"><span data-t="ui.phone"></span>
+            <span class="field-wrap"><input class="input" name="phone" type="tel" required autocomplete="tel" placeholder="+351 9xx xxx xxx"><span class="uline" data-uline aria-hidden="true"></span></span>
+          </label>
+          <label class="field full"><span data-t="ui.email"></span>
+            <span class="field-wrap"><input class="input" name="email" type="email" required autocomplete="email" data-t-attr="placeholder:ui.phEmail"><span class="uline" data-uline aria-hidden="true"></span></span>
+          </label>
+          <label class="field full"><span data-t="ui.ptype"></span>
+            <span class="field-wrap">
+              <select class="input" name="type" required data-type-select>
+                <option value="" data-t="ui.select"></option>
+              </select>
+              <span class="uline" data-uline aria-hidden="true"></span>
+            </span>
+          </label>
+          <label class="field full"><span data-t="ui.msg"></span>
+            <span class="field-wrap"><textarea class="input" name="message" rows="3" data-t-attr="placeholder:ui.msgPh"></textarea><span class="uline" data-uline aria-hidden="true"></span></span>
+          </label>
+          <button type="submit" class="btn-submit"><span data-t="ui.send"></span> <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="quote-fade" aria-hidden="true"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-contact">
+        <span class="footer-name">Carpintaria Sousa Tavares, Lda.</span>
+        <a class="f-address" data-contact="map" target="_blank" rel="noopener noreferrer" data-t="address"></a>
+        <a data-contact="phone"></a>
+        <a class="f-email" data-contact="email"></a>
+      </div>
+      <div class="footer-nav" data-nav-footer>
+        <a href="#careers" class="f-careers" data-jobs-open data-t="ui.careers"></a>
+      </div>
+      <div class="footer-social">
+        <a data-contact="instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a data-contact="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a data-contact="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="credit">
+        <span>©2026 Carpintaria Sousa Tavares, Lda. <span data-t="ui.rights"></span></span>
+        <span data-t="ui.crafted"></span>
+        <a class="noomo" href="https://noomo.eu" target="_blank" rel="noopener" aria-label="noomo.eu"><img src="assets/images/brand/noomo-cream.png" alt="noomo" width="64" height="14"></a>
+      </span>
+      <a href="#top" class="to-top" data-go="top" data-t="ui.top"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Site scripts (content first so text renders even if a CDN library fails) -->
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/render.js" defer></script>
+<!-- Vendor libraries, pinned versions -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<!-- Behaviour -->
+<script src="assets/js/cursor.js" defer></script>
+<script src="assets/js/menu.js" defer></script>
+<script src="assets/js/panels.js" defer></script>
+<script src="assets/js/work.js" defer></script>
+<script src="assets/js/forms.js" defer></script>
+<script src="assets/js/animations.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
