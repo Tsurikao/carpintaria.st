@@ -4,7 +4,7 @@
   ST.state.reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   ST.state.fine = window.matchMedia('(pointer: fine)').matches && window.matchMedia('(hover: hover)').matches;
 
-  var mq = window.matchMedia('(max-width: 899px)');
+  var mq = window.matchMedia('(max-width: 1023px)');
   ST.state.narrow = mq.matches;
   mq.addEventListener('change', function () {
     ST.state.narrow = mq.matches;

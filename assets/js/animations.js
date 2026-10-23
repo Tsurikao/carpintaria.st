@@ -99,8 +99,8 @@
     });
     var cards = qa('[data-tcard]');
     if (cards.length) {
-      gsap.set(cards, { x: 90, opacity: 0 });
-      STg.create({ trigger: '#reviews', start: 'top 70%', once: true, onEnter: function () { gsap.to(cards.slice().reverse(), { x: 0, opacity: 1, duration: 1.2, ease: 'expo.out', stagger: 0.14 }); } });
+      gsap.set(cards, ST.state.narrow ? { y: 40, opacity: 0 } : { x: 90, opacity: 0 });
+      STg.create({ trigger: '#reviews', start: 'top 70%', once: true, onEnter: function () { gsap.to(ST.state.narrow ? cards : cards.slice().reverse(), { x: 0, y: 0, opacity: 1, duration: 1.2, ease: 'expo.out', stagger: 0.14 }); } });
     }
 
     /* Quote panel frame draws itself */
@@ -129,6 +129,7 @@
 
   ST.initAnimations = function () {
     gsap.registerPlugin(window.ScrollTrigger);
+    ScrollTrigger.config({ ignoreMobileResize: true }); // address-bar show/hide no longer re-lays out pinned sections
     // Safety net: if GSAP's ticker is not running (e.g. a frozen tab), make hidden content visible
     setTimeout(function () { if (gsap.ticker.frame < 20) gsap.set('[data-reveal],[data-hero-line],[data-hero-fade],[data-tcard],[data-eye-item]', { clearProps: 'all' }); }, 2500);
     ST.ctx = gsap.context(build);

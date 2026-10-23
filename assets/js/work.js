@@ -106,7 +106,7 @@
     if (!st || !tr) return;
     if (ST.state.narrow || ST.state.reduced || !window.gsap || !window.ScrollTrigger) {
       sec.style.height = ''; tr.style.transform = '';
-      Object.assign(st.style, { position: 'relative', height: 'auto', minHeight: '0', overflowX: 'auto', paddingBottom: '48px' });
+      Object.assign(st.style, { position: 'relative', height: 'auto', minHeight: '0', overflowX: ST.state.narrow ? 'hidden' : 'auto', paddingBottom: '48px' });
       if (bw) bw.style.display = 'none';
       if (window.ScrollTrigger) ScrollTrigger.refresh();
       return;
